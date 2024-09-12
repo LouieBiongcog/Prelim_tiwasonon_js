@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add All you want</title>
+    <link rel="stylesheet" href="addToCart.css">
+</head>
+<body>
+
+    <h1 class="main-h1">
+            Shopping Cart
+    </h1>
+
+    <div class="wrapper-container">
+        <div class="wrapper">
+            <h2 class="cart-h2">ITEMS</h2>
+            <div class="input-box">
+                <label>Item Name:</label>
+                <input type="text" id="item-name" placeholder="Enter item name" required>
+            </div>
+    
+            <div class="input-box">
+                <label>Item Price:</label>
+                <input type="number" id="item-price" placeholder="Enter item price" required>
+            </div>
+    
+            <div class="input-box">
+                <label>Quantity:</label>
+                <input type="number" id="item-quantity" placeholder="Enter quantity" required>
+            </div>
+
+            <div class="townSelect">
+                <label>Select Town:</label>
+                <select name="town" id="town">Select Town: 
+                <option value="Calape">Calape - ₱150</option>
+                <option value="Tubigon">Tubigon -₱100 </option>
+                <option value="Clarin">Clarin - ₱70</option>
+            </select>
+            </div>
+            <div class="PaymentMethod">
+                <label>Payment Method:</label>
+                <select name="paymethod" id="paymethod">Payment Method: 
+                <option value="gcash">Gcash</option>
+                <option value="maya">Paymaya</option>
+                <option value="paypal">Paypal</option>
+            </select>
+            </div>
+
+    
+            <button class="addToCartBtn" id="add-to-cart-btn">Add to Cart</button>
+        </div>
+    
+        <div class="wrapper">
+            <h2 class="cart-h2">CART ITEMS</h2>
+            <div class="list" id="cart-items">
+            </div>
+            <div class="total-display">
+                Subtotal: <span>₱</span> <span id="total-price">0.00</span><br>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span id="alert-message"></span>
+            <button id="close-alert-btn">Close</button>
+        </div>
+    </div>
+    
+    <script src="addToCart.js"></script>
+</body>
+</html>
